@@ -1,9 +1,26 @@
+# FIGT2P: Adaptive fuzzy incidence graph learning and tensor three-mode projection for multi-source weak multi-label classification
 
-> **Please download the datasets from their official sources listed below.**
+> A robust framework for multi-source multi-label learning under noisy, missing, and inconsistent annotations.
+
+This repository contains the official implementation of the **FIGT2P** model, designed to handle weakly supervised multi-label learning from multiple heterogeneous sources with label noise and missingness.
 
 ---
 
+## 💡 Usage
+
+We provide a small synthetic multi-source multi-label dataset in `datasets/` for quick testing.
+> For real-world experiments, please download full datasets from their official sources (see below).
+
+> After downloading, place your dataset in `datasets/`, and use `trans_to_weaklabels.py` to convert the original multi-source multi-label data into a weakly supervised version with missing and noisy labels. The transformed dataset is automatically saved in the `weaklabel_datasets/` folder.
+
+> Run `main.py`, which contains the full implementation of the FIGT2P model, its core algorithm, and evaluation code.
+
+---
+
+
 ## 🔗 Datasets Used in the Paper
+
+> **Please download the datasets from their official sources listed below.**
 
 All datasets used in our experiments are publicly available. Please download them directly from the original providers:
 
@@ -24,7 +41,6 @@ All datasets used in our experiments are publicly available. Please download the
 
 ## ⚙️ Installation
 
-1. Clone the repository:
+Clone the repository:
    ```bash
    git clone https://github.com/EalynChan/FIGT2P.git
-   cd FIGT2P
